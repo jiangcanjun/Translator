@@ -1,0 +1,10 @@
+﻿#https://github.com/tesseract-ocr/tesseract/
+#CentOS 7 
+yum-config-manager --add-repo https://download.opensuse.org/repositories/home:/Alexander_Pozdnyakov/CentOS_7/
+sudo rpm --import https://build.opensuse.org/projects/home:Alexander_Pozdnyakov/public_key
+#安装软件
+yum  -y install tesseract 
+#安装语言包
+yum -y install tesseract-langpack-deu tesseract-langpack-chi-sim.noarch tesseract-langpack-chi-sim-vert.noarch tesseract-langpack-chi-tra.noarch tesseract-langpack-chi-tra-vert.noarch
+
+pip install translate
